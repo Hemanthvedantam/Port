@@ -1,0 +1,314 @@
+body {
+    background-color: black;
+    color: #00BFAE; /* Stylish green color */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #00BFAE;
+    text-align: center;
+}
+
+.section-content {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px; /* Add space between the items */
+}
+
+.intro-left {
+    flex: 1;
+    color: #00BFAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.photo-frame {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.intro-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.intro-left img:hover {
+    transform: scale(1.1);
+}
+
+.intro-left h1, .intro-left h2 {
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.intro-left h1:hover, .intro-left h2:hover {
+    transform: scale(1.05);
+}
+
+.intro-left h1 {
+    font-size: 3rem;
+}
+
+.intro-left h2 {
+    font-size: 2rem;
+}
+
+.intro-right {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+    font-size: 1.5rem; /* Adjust this value as needed */
+}
+
+.intro-right:hover {
+    transform: scale(1.02);
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #00BFAE;
+    color: #00BFAE;
+    background-color: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #00BFAE;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* CSS for technology labels */
+.tech-heading {
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: white; /* White text color */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between heading and labels */
+    text-align: center; /* Center align the heading */
+}
+
+.tech-labels {
+    display: flex;
+    flex-wrap: wrap; /* Allow labels to wrap if necessary */
+    justify-content: center; /* Center the labels */
+    gap: 15px; /* Space between labels */
+}
+
+.tech-label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #00BFAE;
+    color: #00BFAE;
+    background-color: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+}
+
+.tech-label:hover {
+    background-color: #00BFAE;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* CSS for certificate display */
+.cert-box {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #00BFAE;
+    color: #00BFAE;
+    background-color: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+    text-align: center; /* Center the certificate image */
+}
+
+.cert-box img {
+    max-width: 150px; /* Adjust the maximum width to make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image within the box */
+}
+
+
+.cert-box:hover {
+    background-color: #00BFAE;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Fixed sidebar for social media links */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100px; /* Increased width for better icon visibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding-top: 20px;
+    z-index: 1000; /* Ensure the sidebar is on top of other content */
+}
+
+.sidebar a {
+    margin: 20px 0; /* Increased margin for better spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 40px; /* Increased size for better visibility */
+    height: 40px;
+    filter: invert(75%) sepia(50%) saturate(500%) hue-rotate(120deg); /* Adjust color to green */
+    transition: transform 0.3s ease;
+}
+
+.sidebar img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Personal Details Section */
+/* Adjusted personal-details section */
+/* Center the entire personal-details section */
+/* Personal Details Section */
+#Personal_details {
+    background-color: black;
+    color: #00BFAE;
+    text-align: center; /* Center the heading */
+    padding: 40px; /* Add padding for spacing */
+}
+
+.personal-detail-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+    justify-content: center; /* Center the details */
+    gap: 20px; /* Space between details */
+}
+
+.personal-detail {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #00BFAE;
+    padding: 10px 20px; /* Add padding for spacing */
+    border: 2px solid #00BFAE;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+}
+
+.personal-detail:hover {
+    background-color: #00BFAE;
+    color: white;
+    transform: scale(1.05);
+}
+
+.animated-image {
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image vertically */
+    margin-top: 20px; /* Add spacing between details and image */
+}
+
+.animated-image img {
+    max-width: 300px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: add border-radius for rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Optional: add shadow for effect */
+}
+
+/* Coding Profile Section */
+#coding-profile {
+    background-color: black;
+    color: #00BFAE;
+    text-align: center; /* Center align the heading */
+    padding: 40px; /* Add padding for spacing */
+}
+
+.coding-profile-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    justify-content: center; /* Center the profile items */
+    gap: 20px; /* Space between profile items */
+}
+
+.profile-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #00BFAE;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.profile-link:hover {
+    color: white; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+.profile-logo {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+    margin-bottom: 10px; /* Space between logo and name */
+    transition: transform 0.3s ease;
+}
+
+.profile-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+.profile-name {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+}
+

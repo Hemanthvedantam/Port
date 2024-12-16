@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Certifications</h1>
+    </header>
+    <main>
+        <div class="certification">
+            <h2>Oracle Certification</h2>
+            <button class="cert-button" onclick="document.getElementById('oracle-cert').style.display='block'">View Certificate</button>
+            <img id="oracle-cert" src="{% static 'oracle_cert.png' %}" class="cert-image" style="display:none;">
+        </div>
+        <div class="certification">
+            <h2>Oracle Gen AI</h2>
+            <button class="cert-button" onclick="document.getElementById('oracle-gen-ai').style.display='block'">View Certificate</button>
+            <img id="oracle-gen-ai" src="{% static 'oracle_gen_ai_cert.png' %}" class="cert-image" style="display:none;">
+        </div>
+        <div class="certification">
+            <h2>AWS Cloud</h2>
+            <button class="cert-button" onclick="document.getElementById('aws-cert').style.display='block'">View Certificate</button>
+            <img id="aws-cert" src="{% static 'aws_cert.png' %}" class="cert-image" style="display:none;">
+        </div>
+    </main>
+</body>
+</html>

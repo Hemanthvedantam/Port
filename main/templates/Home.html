@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Fixed Sidebar for Social Media Links -->
+    <div class="sidebar">
+        <a href="https://github.com/Hemanthvedantam" target="_blank">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/hemanth-vedantam-813455280/" target="_blank">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/Hemanthvedantam" target="_blank">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/instagram-new.png" alt="Instagram">
+        </a>
+    </div>
+
+    <section id="intro" class="section">
+        <div class="section-content">
+            <div class="intro-left">
+                <div class="photo-frame">
+                    <img src="{% static 'images/demo.jpg' %}" alt="My Photo">
+                </div>
+                <h1 class="intro-title">Hi, I am Hemanth</h1>
+                <h2 class="intro-subtitle">I am an AI Engineer</h2>
+            </div>
+            <div class="intro-right">
+                <p class="intro-text">
+                    Hello everyone! I am V. Hemanth, a Computer Science and Engineering student specializing in Artificial Intelligence, one of the most transformative technologies of today and the future.
+                    Currently pursuing my B.Tech at KL University (2022-2026), I have gained proficiency in programming languages such as Python, C, and Java.
+                    My primary focus is on Python due to its versatility and widespread use in AI and machine learning applications.
+
+                    In addition to my academic pursuits, I am currently working as an AI Intern at GeekMetrics, where I apply my skills and knowledge to real-world projects.
+                <!-- Button to view resume -->
+                </p>
+                <a href="{% static 'images/resume.jpg' %}" target="_blank" class="button">Get My Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="section">
+        <div class="section-content">
+            <div class="tech-heading">Technologies I have Worked On</div>
+            <div class="tech-labels">
+                <label class="tech-label">Artificial Intelligence</label>
+                <label class="tech-label">Machine Learning</label>
+                <label class="tech-label">Python Programming</label>
+                <label class="tech-label">JAVA</label>
+                <label class="tech-label">Django</label>
+                <label class="tech-label">Data Visualization</label>
+                <label class="tech-label">Cloud Computing</label>
+                <label class="tech-label">SQL</label>
+            </div>
+        </div>
+    </section>
+
+    <section id="coding-profile" class="section">
+        <div class="section-content">
+            <div class="tech-heading">My Coding Profiles</div>
+            <div class="coding-profile-container">
+                <a href="https://www.codechef.com/users/vhemanth31" target="_blank" class="profile-link">
+                   <img src="static/images/codechef.png" alt="CodeChef Logo" class="profile-logo">
+                    <div class="profile-name">CodeChef</div>
+                </a>
+                <a href="https://leetcode.com/u/klu_2200031284/" target="_blank" class="profile-link">
+                    <img src="static/images/leetcode.png" alt="LeetCode Logo" class="profile-logo">
+                    <div class="profile-name">LeetCode</div>
+                </a>
+                <a href="https://www.hackerrank.com/profile/klu_2200031284" target="_blank" class="profile-link">
+                   <img src="static/images/hackerrank.png" alt="HackerRank Logo" class="profile-logo">
+                    <div class="profile-name">HackerRank</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+ <section id="Certifications" class="section">
+        <div class="section-content">
+            <div class="tech-heading">Certifications I Achieved</div>
+            <div class="tech-labels">
+                <!-- Add onClick event to display certificate -->
+                <label class="tech-label" onclick="showCertificate('cert1')">Oracle AI Associate</label>
+                <label class="tech-label" onclick="showCertificate('cert2')">AWS Cloud Practitioner</label>
+                <label class="tech-label" onclick="showCertificate('cert3')">Oracle Gen AI</label>
+                <label class="tech-label" onclick="showCertificate('cert4')">MultiCloud Network Architect</label>
+                <label class="tech-label" onclick="showCertificate('cert5')">Automation Anywhere</label>
+                <label class="tech-label" onclick="showCertificate('cert6')">Introduction to ML by Kaggle</label>
+                <label class="tech-label" onclick="showCertificate('cert7')">Software Development Lifecycle Specialization</label>
+                <label class="tech-label" onclick="showCertificate('cert8')">Soft Skills by TCS</label>
+            </div>
+            <!-- Certificate display area -->
+            <div id="certificate-display" class="cert-box">
+                <img id="certificate-image" src="{% static 'images/default.png' %}" alt="Certificate" style="display: none; max-width: 100%; height: auto;" />
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showCertificate(certName) {
+            const certificateImage = document.getElementById('certificate-image');
+
+            // Show the correct certificate image
+            switch (certName) {
+                case 'cert1':
+                    certificateImage.src = "{% static 'images/Oracle AI Foundations.jpg' %}";
+                    break;
+                case 'cert2':
+                    certificateImage.src = "{% static 'images/AWS certificate cloud.jpg' %}";
+                    break;
+                case 'cert3':
+                    certificateImage.src = "{% static 'images/Oracle Gen AI.jpg' %}";
+                    break;
+                case 'cert4':
+                    certificateImage.src = "{% static 'images/Multicloud_Network_Associate_Certificate.jpg' %}";
+                    break;
+                case 'cert5':
+                    certificateImage.src = "{% static 'images/Automation Anywhere.jpg' %}";
+                    break;
+                case 'cert6':
+                    certificateImage.src = "{% static 'images/Kaggle-MachineLearning.png' %}";
+                    break;
+                case 'cert7':
+                    certificateImage.src = "{% static 'images/software_development_lifecycle.jpg' %}";
+                    break;
+                case 'cert8':
+                    certificateImage.src = "{% static 'images/TCS SoftSkills.jpg' %}";
+                    break;
+                default:
+                    certificateImage.src = "{% static 'images/default.png' %}";
+            }
+            certificateImage.style.display = 'block';
+        }
+    </script>
+
+<section id="Personal_details" class="section">
+    <div class="section-content">
+        <div class="tech-heading">Personal Details</div>
+        <div class="personal-detail-container">
+            <div class="personal-detail">Name: Vedantam Hemanth</div>
+            <div class="personal-detail">Age: 19</div>
+            <div class="personal-detail">Sex: Male</div>
+            <div class="personal-detail">Email: hemanthvedantam@gmail.com</div>
+            <div class="personal-detail">Mobile Number: +91 8919320565</div>
+        </div>
+        <div class="animated-image">
+            <img src="{% static 'images/hi.png' %}" alt="Animated Image">
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

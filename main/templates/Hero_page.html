@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Fixed Sidebar for Social Media Links -->
+    <div class="sidebar">
+        <a href="https://github.com/Hemanthvedantam" target="_blank">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/hemanth-vedantam-813455280/" target="_blank">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/Hemanthvedantam" target="_blank">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/instagram-new.png" alt="Instagram">
+        </a>
+    </div>
+
+    <section id="intro" class="section">
+        <div class="section-content">
+            <div class="intro-left">
+                <div class="photo-frame">
+                    <img src="{% static 'images/profilenew.jpeg' %}" alt="My Photo">
+                </div>
+                <h1 class="intro-title">Hi, I am Hemanth</h1>
+                <h2 class="intro-subtitle">I am an AI Engineer</h2>
+            </div>
+            <div class="intro-right">
+                <p class="intro-text">Hello everyone!
+
+I am V. Hemanth, a Computer Science and Engineering student specializing in Artificial Intelligence, one of the most transformative technologies of today and the future. Currently pursuing my B.Tech at KL University (2022-2026), I have gained proficiency in programming languages such as Python, C, and Java. My primary focus is on Python due to its versatility and widespread use in AI and machine learning applications.
+
+In addition to my academic pursuits, I am currently working as an AI Intern at GeekMetrics, where I apply my skills and knowledge to real-world projects.</p>
+                <!-- Button to view resume -->
+                <a href="{% static 'images/resume.jpg' %}" target="_blank" class="button">Get Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="section">
+        <div class="section-content">
+            <div class="tech-heading">Technologies I have Worked On</div>
+            <div class="tech-buttons">
+                <a href="#" class="tech-button">Artificial Intelligence</a>
+                <a href="#" class="tech-button">Machine Learning</a>
+                <a href="#" class="tech-button">Django</a>
+                <a href="#" class="tech-button">Data Visualization</a>
+                <a href="#" class="tech-button">Cloud Computing</a>
+                <a href="#" class="tech-button">SQL</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="section-content">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-box">Oracle AI</div>
+            <div class="cert-box">Oracle Gen AI</div>
+            <div class="cert-box">AWS Cloud Associate</div>
+            <div class="cert-box">Multi Cloud Network Security</div>
+            <div class="cert-box">Automation Anywhere</div>
+            <div class="cert-box">Intro to Machine Learning by Kaggle</div>
+        </div>
+    </section>
+
+    <section id="profiles" class="section">
+        <div class="section-content">
+            <div class="profile">
+                <img src="https://img.icons8.com/material-outlined/24/000000/github.png" alt="GitHub">
+                <a href="https://github.com/Hemanthvedantam" target="_blank">GitHub</a>
+            </div>
+            <div class="profile">
+                <img src="https://img.icons8.com/material-outlined/24/000000/linkedin.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/hemanth-vedantam-813455280/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="profile">
+                <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new.png" alt="Instagram">
+                <a href="https://www.instagram.com/Hemanthvedantam" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
